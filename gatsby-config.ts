@@ -76,6 +76,7 @@ const flags = {
 
 export default {
     siteMetadata,
+    pathPrefix: '/gatsby-demo',
     plugins,
     flags,
 };
