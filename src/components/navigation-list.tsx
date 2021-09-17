@@ -70,9 +70,15 @@ const List: React.FC<NavigationListProps> = ({
 const ListItem = ({ data, active, liClassName }) => {
     return (
         <li className={`${liClassName} ${active ? "active" : ""}`}>
-            <Link to={data.url} title={data.name} className="text-color-2 focus:text-primary">
-                <span>{data.name}</span>
-            </Link>
+            {
+                data.name === "TIENDA" ?
+                <a className="text-color-2 focus:text-primary" href={data.url} target="_blank" rel="noopener noreferrer">
+                    {data.name}
+                </a> :
+                <Link to={data.url} title={data.name} className="text-color-2 focus:text-primary">
+                    <span>{data.name}</span>
+                </Link>
+            }
         </li>
     )
 }

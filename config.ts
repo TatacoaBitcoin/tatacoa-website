@@ -35,6 +35,10 @@ const siteMetadata = {
             url: "/portfolio",
         },
         {
+            name: "TIENDA",
+            url: "https://shop.tatacoabitcoin.com/",
+        },
+        {
             name: "CONTACTO",
             url: "/contact",
         },
