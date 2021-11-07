@@ -9,7 +9,7 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `Productos | Servicios`,
-    description: `Integre pagos con criptomonedas en su comercio`,
+    description: `Procesamiento de pagos usando la red Lightning`,
     about:
         "Somos una organizacion dedicada a la promoción de productos y servicios relacionados a las criptomonedas. Creemos firmemente que las criptomonedas tienen el potencial de convertirse en motor de desarrollo económico y empoderar a las personas en el manejo de sus recursos económicos",
     author: `Tatacoa Team`,
