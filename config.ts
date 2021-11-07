@@ -81,7 +81,7 @@ const siteMetadata = {
         description: `Si tienes inquietudes, no dudes en contactarnos`,
         mail: "info@tatacoabitcoin.com",
         phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        address: "",
     },
     disqus: "elemental-netlify-com",
 }

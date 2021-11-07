@@ -5459,6 +5459,30 @@
               "deprecationReason": null
             },
             {
+              "name": "template",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "image",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "File",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "date",
               "description": null,
               "args": [
@@ -5512,18 +5536,6 @@
               "deprecationReason": null
             },
             {
-              "name": "image",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "File",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "banner",
               "description": null,
               "args": [],
@@ -5537,18 +5549,6 @@
             },
             {
               "name": "description",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "template",
               "description": null,
               "args": [],
               "type": {
@@ -10521,11 +10521,11 @@
               "defaultValue": null
             },
             {
-              "name": "date",
+              "name": "template",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
-                "name": "DateQueryOperatorInput",
+                "name": "StringQueryOperatorInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -10536,6 +10536,16 @@
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "FileFilterInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "date",
+              "description": null,
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "DateQueryOperatorInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -10552,16 +10562,6 @@
             },
             {
               "name": "description",
-              "description": null,
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "template",
               "description": null,
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -12653,7 +12653,7 @@
               "deprecationReason": null
             },
             {
-              "name": "childrenMdx___frontmatter___date",
+              "name": "childrenMdx___frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -12882,6 +12882,12 @@
             },
             {
               "name": "childrenMdx___frontmatter___image___children",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "childrenMdx___frontmatter___date",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -13116,12 +13122,6 @@
             },
             {
               "name": "childrenMdx___frontmatter___description",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "childrenMdx___frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -13463,7 +13463,7 @@
               "deprecationReason": null
             },
             {
-              "name": "childMdx___frontmatter___date",
+              "name": "childMdx___frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -13692,6 +13692,12 @@
             },
             {
               "name": "childMdx___frontmatter___image___children",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "childMdx___frontmatter___date",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -13926,12 +13932,6 @@
             },
             {
               "name": "childMdx___frontmatter___description",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "childMdx___frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -23606,7 +23606,7 @@
               "deprecationReason": null
             },
             {
-              "name": "frontmatter___date",
+              "name": "frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -24087,6 +24087,12 @@
             },
             {
               "name": "frontmatter___image___internal___type",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "frontmatter___date",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -24573,12 +24579,6 @@
             },
             {
               "name": "frontmatter___description",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
