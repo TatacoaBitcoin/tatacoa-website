@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-contact-tsx",
     "path": "/contact/",
-    "result": {"data":{"site":{"siteMetadata":{"contact":{"api_url":"https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3","description":"Si tienes inquietudes, no dudes en contactarnos","mail":"info@tatacoabitcoin.com","phone":"000-000-0000","address":"1234 \nLocation \nLocation"}}}},"pageContext":{}},
+    "result": {"data":{"site":{"siteMetadata":{"contact":{"api_url":"https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3","description":"Si tienes inquietudes, no dudes en contactarnos","mail":"info@tatacoabitcoin.com","phone":"000-000-0000","address":""}}}},"pageContext":{}},
     "staticQueryHashes": ["1139857438","1946588481","2083862410","2213455283","2418326273","3067102388","747823297"]}
