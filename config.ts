@@ -157,10 +157,10 @@ const contactFormSubmit = async (api, data) => {
 const defaults = {
     disqus: null,
     twoColumnWall: true,
-    darkmode: false,
+    darkmode: true,
     switchTheme: true,
     capitalizeTitleOnHome: true,
-    cookiePolicy: false
+    cookiePolicy: true
 }
 
 Object.keys(defaults).forEach(item => {
