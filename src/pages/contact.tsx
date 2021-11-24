@@ -28,7 +28,7 @@ export default ({data, location}: PageProps<ContactQuery>) => {
                         <Form api={api_url}/>
                     </div>
                     }
-                    <div className={`w-full ${hasContactForm ? 'lg:w-1/2' : 'lg:w-2/3 mx-auto'} px-6 pt-8`}>
+                    <div className={`w-full ${hasContactForm ? 'lg:w-1/2' : 'lg:w-2/3 mx-auto'} px-6 pt-8 text-center`}>
                         <Description data={data.site.siteMetadata.contact} />
                     </div>
                 </div>

@@ -148,7 +148,7 @@ const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = 
             )}
             <ul className="my-4">
                 {data.mail && (
-                    <li className="flex items-center">
+                    <li className="flex justify-center">
                         <span className="text-secondary icon">
                             <Mail />
                         </span>
@@ -158,7 +158,7 @@ const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = 
                     </li>
                 )}
                 {data.phone && (
-                    <li className="flex items-center mt-4">
+                    <li className="flex justify-center mt-4">
                         <span className="text-secondary icon">
                             <Phone />
                         </span>
