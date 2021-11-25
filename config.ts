@@ -1,9 +1,9 @@
 const siteMetadata = {
     title: `Tatacoa Bitcoin`,
-    siteUrl: `http://localhost`,
+    siteUrl: `http://www.tatacoabitcoin.com`,
     capitalizeTitleOnHome: false,
-    logo: `/images/ln.svg`,
-    icon: `/images/ln.svg`,
+    logo: `/images/tatacoa.png`,
+    icon: `/images/tatacoa.png`,
     titleImage: `/images/wall4.jpg`,
     ogImage: `/images/wall4.jpg`,
     twoColumnWall: true,
@@ -48,42 +48,42 @@ const siteMetadata = {
             name: "POLITICA DE DATOS",
             url: "/privacy-policy",
         },
-        {
-            name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
-        },
+        // {
+        //     name: "GitHub",
+        //     url: "https://github.com/akzhy/gatsby-starter-elemental",
+        // },
     ],
     social: [
+        // {
+        //     name: "Facebook",
+        //     icon: "/images/Facebook.svg",
+        //     url: "#",
+        // },
+        // {
+        //     name: "Twitter",
+        //     icon: "/images/Twitter.svg",
+        //     url: "#",
+        // },
         {
-            name: "Facebook",
-            icon: "/images/Facebook.svg",
-            url: "#",
-        },
-        {
-            name: "Twitter",
-            icon: "/images/Twitter.svg",
-            url: "#",
+            name: "WhatsApp",
+            icon: "/images/whatsapp.svg",
+            url: "https://wa.me/573006747172?text=Hola%2C%20estoy%20interesado%20en%20saber%20m%C3%A1s%20acerca%20de%20sus%20servicios",
         },
         {
             name: "Instagram",
-            icon: "/images/Instagram.svg",
-            url: "#",
-        },
-        {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
+            icon: "/images/instagram.svg",
             url: "#",
         },
     ],
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
+        api_url: "",
         description: `Si tienes inquietudes, no dudes en contactarnos`,
-        mail: "info@tatacoabitcoin.com",
-        phone: "000-000-0000",
+        mail: "contacto@tatacoabitcoin.com",
+        phone: "+57 302 662 5303",
         address: "",
     },
-    disqus: "elemental-netlify-com",
+    disqus: "tatacoa",
 }
 
 const beforeContactFormSubmit = data => {
@@ -157,10 +157,10 @@ const contactFormSubmit = async (api, data) => {
 const defaults = {
     disqus: null,
     twoColumnWall: true,
-    darkmode: false,
+    darkmode: true,
     switchTheme: true,
     capitalizeTitleOnHome: true,
-    cookiePolicy: false
+    cookiePolicy: true
 }
 
 Object.keys(defaults).forEach(item => {

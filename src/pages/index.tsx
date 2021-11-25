@@ -185,7 +185,7 @@ const Contact = ({ data }) => {
                 <div
                     className={`w-full ${
                         hasContactForm ? "lg:w-1/2" : "lg:w-2/3 mx-auto"
-                    } px-6 pt-8`}
+                    } px-6 pt-8 text-center`}
                 >
                     <ContactDescription data={data} />
                 </div>
