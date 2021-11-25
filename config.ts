@@ -1,9 +1,9 @@
 const siteMetadata = {
     title: `Tatacoa Bitcoin`,
-    siteUrl: `http://localhost`,
+    siteUrl: `http://www.tatacoabitcoin.com`,
     capitalizeTitleOnHome: false,
-    logo: `/images/ln.svg`,
-    icon: `/images/ln.svg`,
+    logo: `/images/tatacoa.png`,
+    icon: `/images/tatacoa.png`,
     titleImage: `/images/wall4.jpg`,
     ogImage: `/images/wall4.jpg`,
     twoColumnWall: true,

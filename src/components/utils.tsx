@@ -20,6 +20,7 @@ const Logo = ({ className = "logo" }) => {
             src={data.site.siteMetadata.logo}
             alt={`${data.site.siteMetadata.title} - logo`}
             className={className}
+            width="180px"
         />
     )
 }
