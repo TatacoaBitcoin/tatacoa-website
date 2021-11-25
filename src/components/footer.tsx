@@ -38,9 +38,9 @@ export default function() {
                 <div
                     className="text-color-2 my-3"
                 >
-                    <ul>
+                    {/* <ul>
                     {footerLinks} 
-                    </ul>
+                    </ul> */}
                 </div>
                 <p className="text-color-default text-lg">
                     {query.site.siteMetadata.title}{" - "}
