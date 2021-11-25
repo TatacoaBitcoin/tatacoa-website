@@ -79,11 +79,11 @@ const siteMetadata = {
         // leave empty ('') or false to hide form
         api_url: "",
         description: `Si tienes inquietudes, no dudes en contactarnos`,
-        mail: "info@tatacoabitcoin.com",
-        phone: "000-000-0000",
+        mail: "contacto@tatacoabitcoin.com",
+        phone: "+57 302 662 5303",
         address: "",
     },
-    disqus: "elemental-netlify-com",
+    disqus: "tatacoa",
 }
 
 const beforeContactFormSubmit = data => {
