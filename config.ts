@@ -46,20 +46,35 @@ const siteMetadata = {
         //     icon: "/images/Facebook.svg",
         //     url: "#",
         // },
-        // {
-        //     name: "Twitter",
-        //     icon: "/images/Twitter.svg",
-        //     url: "#",
-        // },
         {
-            name: "WhatsApp",
-            icon: "/images/whatsapp.svg",
-            url: "https://wa.me/573006747172?text=Hola%2C%20estoy%20interesado%20en%20saber%20m%C3%A1s%20acerca%20de%20sus%20servicios",
+            name: "Twitter",
+            icon: "/images/twitter.svg",
+            url: "https://twitter.com/TatacoaBitcoin",
         },
+        // {
+        //     name: "WhatsApp",
+        //     icon: "/images/whatsapp.svg",
+        //     url: "https://wa.me/573006747172?text=Hola%2C%20estoy%20interesado%20en%20saber%20m%C3%A1s%20acerca%20de%20sus%20servicios",
+        // },
         {
             name: "Instagram",
             icon: "/images/instagram.svg",
-            url: "#",
+            url: "https://www.instagram.com/tatacoabitcoin/",
+        },
+        {
+            name: "Telegram",
+            icon: "/images/telegram.svg",
+            url: "https://t.me/tatacoatech",
+        },
+        {
+            name: "LinkedIn",
+            icon: "/images/linkedin.svg",
+            url: "https://www.linkedin.com/company/tatacoa-bitcoin/",
+        },
+        {
+            name: "Github",
+            icon: "/images/github.svg",
+            url: "https://github.com/TatacoaBitcoin",
         },
     ],
     contact: {
@@ -67,7 +82,7 @@ const siteMetadata = {
         api_url: "",
         description: `Si tienes inquietudes, no dudes en contactarnos`,
         mail: "contacto@tatacoabitcoin.com",
-        phone: "+57 302 662 5303",
+        phone: "",
         address: "",
     },
     disqus: "tatacoa",
