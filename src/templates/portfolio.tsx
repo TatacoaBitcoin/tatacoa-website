@@ -9,23 +9,26 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Row, Col } from "../components/shortcodes/index"
 import { PortfolioQuery } from "./__generated__/PortfolioQuery"
 
-export default function porfolio ({ location, data }: PageProps<PortfolioQuery, {}>) {
+export default function porfolio({
+    location,
+    data,
+}: PageProps<PortfolioQuery, {}>) {
     return (
         <Layout
             seo={{
                 title: data.mdx.frontmatter.title,
                 description: data.mdx.frontmatter.description,
-                image: data.mdx.frontmatter.banner.publicURL,
+                // image: data.mdx.frontmatter.banner.publicURL,
             }}
             location={location}
         >
             <div className="md:px-4 mt-12 py-6 md:w-11/12 mx-auto">
                 <div className="mx-auto relative">
-                    <Img
+                    {/* <Img
                         fluid={
                             data.mdx.frontmatter.banner.childImageSharp.fluid
                         }
-                    />
+                    /> */}
                     <div className="flex items-center justify-center relative lg:absolute w-full h-full top-0 left-0">
                         <div className="hidden lg:block absolute w-full h-full bg-black opacity-50"></div>
                         <div className="px-4 py-8 lg:p-0 relative z-10 text-center text-color-default lg:text-white bg-bgalt lg:bg-transparent">
