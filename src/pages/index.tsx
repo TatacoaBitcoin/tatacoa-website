@@ -23,7 +23,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         />
     ))
 
-    const blogList = data.blog.edges.map(item => (
+    const blogList = data.blog.edges.map((item) => (
         <ItemBlog data={item.node} key={`b-item-index-${item.node.id}`} />
     ))
 
@@ -40,6 +40,9 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
             <div className="px-4 lg:px-0" id="portfolio">
+                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                    Productos
+                </h2>
                 {portfolioList}
             </div>
             <Blog>{blogList}</Blog>
@@ -76,7 +79,6 @@ const Wall = ({ data }) => {
         spanAttrs.style = {
             backgroundImage: `url('${data.titleImage}')`,
         }
-
     }
 
     const innerComponents = (
@@ -91,10 +93,10 @@ const Wall = ({ data }) => {
                     {data.title}
                 </h1>
             </div>
-{/*             <p className="text-lg lg:text-xl text-color-2 pt-4 lg:pt-0">
+            {/*             <p className="text-lg lg:text-xl text-color-2 pt-4 lg:pt-0">
                 {data.introTag}
             </p> */}
-            <p className="text-base lg:text-lg mt-4">{data.description}</p>
+            <p className="text-base lg:text-2xl mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
                     title="VER MAS"
@@ -145,10 +147,10 @@ const About = ({ data }) => {
     return (
         <div className="boxed">
             <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
-                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                {/* <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Acerca de nosotros
-                </h2>
-                <p className="mt-5 text-lg">{data}</p>
+                </h2> */}
+                <p className="mt-5 text-3xl">{data}</p>
             </div>
         </div>
     )

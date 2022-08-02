@@ -9,9 +9,8 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `Productos | Servicios`,
-    description: `Procesamiento de pagos usando la red Lightning`,
-    about:
-        "Somos una organizacion dedicada a la promoción de productos y servicios relacionados a las criptomonedas. Creemos firmemente que las criptomonedas tienen el potencial de convertirse en motor de desarrollo económico y empoderar a las personas en el manejo de sus recursos económicos",
+    description: `La forma más sencilla de usar la red Lightning`,
+    about:`Promovemos la adopción masiva de Bitcoin facilitando la integración y el uso de la red Lightning como el futuro de los pagos electrónicos`,
     author: `Tatacoa Team`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -33,10 +32,6 @@ const siteMetadata = {
         {
             name: "SERVICIOS",
             url: "/portfolio",
-        },
-        {
-            name: "TIENDA",
-            url: "https://shop.tatacoabitcoin.com/",
         },
         {
             name: "CONTACTO",
