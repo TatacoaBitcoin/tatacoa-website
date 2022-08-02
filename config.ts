@@ -26,6 +26,10 @@ const siteMetadata = {
             url: "/blog",
         },
         {
+            name: "DOCS",
+            url: "https://api-docs.tatacoabitcoin.com/",
+        },
+        {
             name: "CONTACTO",
             url: "/contact",
         },
