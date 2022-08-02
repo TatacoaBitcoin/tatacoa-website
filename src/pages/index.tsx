@@ -150,7 +150,7 @@ const About = ({ data }) => {
                 {/* <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Acerca de nosotros
                 </h2> */}
-                <p className="mt-5 text-3xl">{data}</p>
+                <p className="mt-5 text-4xl">{data}</p>
             </div>
         </div>
     )

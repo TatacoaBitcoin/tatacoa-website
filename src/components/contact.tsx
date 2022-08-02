@@ -8,7 +8,7 @@ import { beforeContactFormSubmit, contactFormSubmit } from "../../config"
 import SocialLinks from "../utils/sociallinks"
 import { ContactQuery_site_siteMetadata_contact } from "../pages/__generated__/ContactQuery"
 
-type FeedbackState = { [id: number]: { message?: string, type?: string }}
+type FeedbackState = { [id: number]: { message?: string; type?: string } }
 
 const Form: React.FC<{ api: string }> = ({ api }) => {
     const [data, changeData] = useState({
@@ -19,63 +19,64 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
     const [feedback, setFeedback] = useState<FeedbackState>({})
 
-    const [ transactionState, setTransactionState] = useState(false);
+    const [transactionState, setTransactionState] = useState(false)
 
-    const updateData = v => changeData({ ...data, ...v })
+    const updateData = (v) => changeData({ ...data, ...v })
 
     return (
         <form
-            onSubmit={event => {
+            onSubmit={(event) => {
                 event.preventDefault()
-                setTransactionState(true);
+                setTransactionState(true)
 
-                const validate = beforeContactFormSubmit(data);
+                const validate = beforeContactFormSubmit(data)
 
                 if (validate.result) {
-                    setFeedback({});
-                    contactFormSubmit(api, validate.data).then(res => {
-                        if (res.result) {
-                            setFeedback({
-                                4: {
-                                    type: "success",
-                                    message:
-                                        "Your message has been sent.",
-                                },
-                            })
-                        } else {
+                    setFeedback({})
+                    contactFormSubmit(api, validate.data)
+                        .then((res) => {
+                            if (res.result) {
+                                setFeedback({
+                                    4: {
+                                        type: "success",
+                                        message: "Your message has been sent.",
+                                    },
+                                })
+                            } else {
+                                setFeedback({
+                                    4: {
+                                        message:
+                                            "There was an error sending the message. Please try again.",
+                                    },
+                                })
+                            }
+                            setTransactionState(false)
+                        })
+                        .catch((err) => {
                             setFeedback({
                                 4: {
                                     message:
                                         "There was an error sending the message. Please try again.",
                                 },
                             })
-                        }
-                        setTransactionState(false);
-                    }).catch(err => {
-                        setFeedback({
-                            4: {
-                                message:
-                                    "There was an error sending the message. Please try again.",
-                            },
+                            setTransactionState(false)
                         })
-                        setTransactionState(false);
-                    })
                 } else {
                     const errs = {}
 
-                    validate.errors.forEach(err => {
+                    validate.errors.forEach((err) => {
                         errs[err.code] = { message: err.message }
                     })
 
                     setFeedback(errs)
-                    setTransactionState(false);
+                    setTransactionState(false)
                 }
             }}
         >
             <TextInput
                 label="Nombre"
                 name="name"
-                onChange={e =>
+                onChange={(e) =>
                     updateData({
                         name: e.target.value,
                     })
@@ -92,7 +93,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
                 label="Correo"
                 name="email"
                 type="email"
-                onChange={e =>
+                onChange={(e) =>
                     updateData({
                         email: e.target.value,
                     })
@@ -109,7 +110,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
                 label="Mensaje"
                 name="message"
                 type="textarea"
-                onChange={e =>
+                onChange={(e) =>
                     updateData({
                         message: e.target.value,
                     })
@@ -133,64 +134,78 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
                     type="button,submit"
                     title="Enviar"
                     disabled={transactionState}
-                    iconRight={<IconRight spin={transactionState}/>}
+                    iconRight={<IconRight spin={transactionState} />}
                 />
             </div>
         </form>
     )
 }
 
-const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = ({ data }) => {
-    return (
-        <div>
-            {data.description && (
-                <p className="text-color-default">{data.description}</p>
-            )}
-            <ul className="my-4">
-                {data.mail && (
-                    <li className="flex justify-center">
-                        <span className="text-secondary icon">
-                            <Mail />
-                        </span>
-                        <a className="ml-4" href={"mailto:" + data.mail}>
-                            {data.mail}
-                        </a>
-                    </li>
+const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> =
+    ({ data }) => {
+        return (
+            <div>
+                {data.description && (
+                    <p className="text-color-default text-2xl">
+                        {data.description}
+                    </p>
                 )}
-                {data.phone && (
-                    <li className="flex justify-center mt-4">
-                        <span className="text-secondary icon">
-                            <Phone />
-                        </span>
-                        <a className="ml-4" href={"tel:" + data.phone}>
-                            {data.phone}
-                        </a>
+                <ul className="my-4">
+                    {data.mail && (
+                        <li className="flex justify-center">
+                            <span className="text-secondary icon">
+                                <Mail />
+                            </span>
+                            <a
+                                className="ml-4 text-2xl"
+                                href={"mailto:" + data.mail}
+                            >
+                                {data.mail}
+                            </a>
+                        </li>
+                    )}
+                    {data.phone && (
+                        <li className="flex justify-center mt-4">
+                            <span className="text-secondary icon">
+                                <Phone />
+                            </span>
+                            <a
+                                className="ml-4 text-2xl"
+                                href={"tel:" + data.phone}
+                            >
+                                {data.phone}
+                            </a>
+                        </li>
+                    )}
+                    {data.address && (
+                        <li className="flex items-start mt-4">
+                            <span className="mt-1 text-secondary icon">
+                                <MapPin />
+                            </span>
+                            <p className="whitespace-pre ml-4">
+                                {data.address}
+                            </p>
+                        </li>
+                    )}
+                    <li>
+                        <SocialLinks />
                     </li>
-                )}
-                {data.address && (
-                    <li className="flex items-start mt-4">
-                        <span className="mt-1 text-secondary icon">
-                            <MapPin />
-                        </span>
-                        <p className="whitespace-pre ml-4">{data.address}</p>
-                    </li>
-                )}
-                <li>
-                    <SocialLinks />
-                </li>
-            </ul>
-        </div>
-    )
-}
+                </ul>
+            </div>
+        )
+    }
 
 const IconRight = ({ spin = false }) => {
-    if(spin) {
+    if (spin) {
         return (
-            <span className="spin" style={{
-                display: "inline-block",
-                verticalAlign: "middle",
-                animationDuration: "5s"
-            }}>
+            <span
+                className="spin"
+                style={{
+                    display: "inline-block",
+                    verticalAlign: "middle",
+                    animationDuration: "5s",
+                }}
+            >
                 <Loader />
             </span>
         )
@@ -198,7 +213,7 @@ const IconRight = ({ spin = false }) => {
     return <Send />
 }
 
-type FormMessageProps = { show: boolean, type: string, message: string }
+type FormMessageProps = { show: boolean; type: string; message: string }
 const FormMessage: React.FC<FormMessageProps> = ({ show, type, message }) => {
     if (!show) return null
     return <p className={`text-${type} my-2`}>{message}</p>

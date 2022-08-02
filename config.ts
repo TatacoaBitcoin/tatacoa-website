@@ -22,16 +22,8 @@ const siteMetadata = {
             url: "/",
         },
         {
-            name: "NOSOTROS",
-            url: "/about",
-        },
-        {
             name: "BLOG",
             url: "/blog",
-        },
-        {
-            name: "SERVICIOS",
-            url: "/portfolio",
         },
         {
             name: "CONTACTO",
