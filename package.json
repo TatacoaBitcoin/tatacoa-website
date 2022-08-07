@@ -15,6 +15,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "gatsby": "^3.12.0",
@@ -41,6 +42,7 @@
   "devDependencies": {
     "@babel/compat-data": "^7.15.0",
     "@babel/core": "^7.15.0",
+    "@types/google.maps": "^3.49.2",
     "@types/node": "^16.7.1",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
