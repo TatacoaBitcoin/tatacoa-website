@@ -50,7 +50,7 @@ export default ({ location }: PageProps<{}, {}>) => {
                 <div style={{ height: "100vh", width: "100%" }}>
                     <GoogleMapReact
                         bootstrapURLKeys={{
-                            key: "AIzaSyDak3cZqnb-LtbiBi7hARyIR1cLmnzAJvw",
+                            key: process.env.GMAPS_KEY,
                         }}
                         defaultCenter={{ lat: 10, lng: -80 }}
                         defaultZoom={4}
