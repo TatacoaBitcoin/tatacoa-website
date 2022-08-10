@@ -1216,6 +1216,13 @@
     "querystring" "^0.2.0"
     "strip-ansi" "^6.0.0"
 
+"@googlemaps/js-api-loader@^1.7.0":
+  "integrity" "sha512-6iIb+qpGgQpgIHmIFO44WhE1rDUxPVHuezNFL30wRJnkvhwFm94tD291UvNg9L05hLDSoL16jd0lbqqmdy4C5g=="
+  "resolved" "https://registry.npmjs.org/@googlemaps/js-api-loader/-/js-api-loader-1.14.3.tgz"
+  "version" "1.14.3"
+  dependencies:
+    "fast-deep-equal" "^3.1.3"
+
 "@graphql-tools/batch-execute@^7.1.2":
   "integrity" "sha512-IuR2SB2MnC2ztA/XeTMTfWcA0Wy7ZH5u+nDkDNLAdX+AaSyDnsQS35sCmHqG0VOGTl7rzoyBWLCKGwSJplgtwg=="
   "resolved" "https://registry.npmjs.org/@graphql-tools/batch-execute/-/batch-execute-7.1.2.tgz"
@@ -1704,6 +1711,11 @@
   dependencies:
     "@babel/runtime" "^7.7.2"
     "regenerator-runtime" "^0.13.3"
+
+"@mapbox/point-geometry@^0.1.0":
+  "integrity" "sha512-6j56HdLTwWGO0fJPlrZtdU/B13q8Uwmo18Ck2GnGgN9PCFyKTZ3UbXeEdRFh18i9XQ92eH2VdtpJHpBD3aripQ=="
+  "resolved" "https://registry.npmjs.org/@mapbox/point-geometry/-/point-geometry-0.1.0.tgz"
+  "version" "0.1.0"
 
 "@mdx-js/mdx@^1.0.0", "@mdx-js/mdx@^1.6.22":
   "integrity" "sha512-AMxuLxPz2j5/6TpF/XSdKpQP1NlG0z11dFOlq+2IP/lSgl11GY8ji6S/rgsViN/L0BDvHvUMruRb7ub+24LUYA=="
@@ -7224,6 +7236,16 @@
     "lodash" "~4.17.10"
     "minimatch" "~3.0.2"
 
+"google-map-react@^2.2.0":
+  "integrity" "sha512-UPiTwR3qNKJJizURXTuCbnBr8kLtLsiikj/KH1UTLGhadnU6fT+CE3CLw1lzZwk5zZIduQQODyIcEwNInECmUg=="
+  "resolved" "https://registry.npmjs.org/google-map-react/-/google-map-react-2.2.0.tgz"
+  "version" "2.2.0"
+  dependencies:
+    "@googlemaps/js-api-loader" "^1.7.0"
+    "@mapbox/point-geometry" "^0.1.0"
+    "eventemitter3" "^4.0.4"
+    "prop-types" "^15.7.2"
+
 "got@^10.7.0":
   "integrity" "sha512-aWTDeNw9g+XqEZNcTjMMZSy7B7yE9toWOFYip7ofFTLleJhvZwUxxTxkTpKvF+p1SAA4VHmuEy7PiHTHyq8tJg=="
   "resolved" "https://registry.npmjs.org/got/-/got-10.7.0.tgz"
@@ -11236,7 +11258,7 @@
     "strip-ansi" "6.0.0"
     "text-table" "0.2.0"
 
-"react-dom@^16.9.0 || ^17.0.0", "react-dom@^17.0.2", "react-dom@15.x || 16.x || 17.x":
+"react-dom@^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^16.9.0 || ^17.0.0", "react-dom@^17.0.2", "react-dom@15.x || 16.x || 17.x":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -11297,7 +11319,7 @@
   "resolved" "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.1.tgz"
   "version" "2.1.1"
 
-"react@^16.0.0 || ^17.0.0", "react@^16.13.1 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.5.2", "react@^16.8.6 || ^17", "react@^16.9.0 || ^17.0.0", "react@^17.0.2", "react@>=16.3.0", "react@15.x || 16.x || 17.x", "react@17.0.2":
+"react@^16.0.0 || ^17.0.0", "react@^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.13.1 || ^17.0.0", "react@^16.3.0 || ^17.0.0", "react@^16.5.2", "react@^16.8.6 || ^17", "react@^16.9.0 || ^17.0.0", "react@^17.0.2", "react@>=16.3.0", "react@15.x || 16.x || 17.x", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
